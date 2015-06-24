@@ -40,7 +40,6 @@
             this.customerTableAdapter = new Peterson.Database1DataSetTableAdapters.CustomerTableAdapter();
             this.tableAdapterManager = new Peterson.Database1DataSetTableAdapters.TableAdapterManager();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.invoiceListBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.invoiceListTableAdapter = new Peterson.Database1DataSetTableAdapters.InvoiceListTableAdapter();
             this.invoice_NumberTextBox = new System.Windows.Forms.TextBox();
             this.car_YearTextBox = new System.Windows.Forms.TextBox();
@@ -56,6 +55,7 @@
             this.textInvoice = new System.Windows.Forms.TextBox();
             this.viewButton = new System.Windows.Forms.Button();
             this.newButton = new System.Windows.Forms.Button();
+            this.invoiceListBindingSource = new System.Windows.Forms.BindingSource(this.components);
             invoice_NumberLabel = new System.Windows.Forms.Label();
             car_YearLabel = new System.Windows.Forms.Label();
             car_MakeLabel = new System.Windows.Forms.Label();
@@ -149,11 +149,6 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(214, 329);
             this.listBox1.TabIndex = 0;
-            // 
-            // invoiceListBindingSource
-            // 
-            this.invoiceListBindingSource.DataMember = "FK_InvoiceList_ToCustomer";
-            this.invoiceListBindingSource.DataSource = this.customerBindingSource;
             // 
             // invoiceListTableAdapter
             // 
@@ -263,6 +258,7 @@
             this.viewButton.TabIndex = 36;
             this.viewButton.Text = "View Invoice";
             this.viewButton.UseVisualStyleBackColor = true;
+            this.viewButton.Click += new System.EventHandler(this.viewButton_Click);
             // 
             // newButton
             // 
@@ -272,6 +268,12 @@
             this.newButton.TabIndex = 37;
             this.newButton.Text = "New Invoice";
             this.newButton.UseVisualStyleBackColor = true;
+            this.newButton.Click += new System.EventHandler(this.newButton_Click);
+            // 
+            // invoiceListBindingSource
+            // 
+            this.invoiceListBindingSource.DataMember = "FK_InvoiceList_ToCustomer";
+            this.invoiceListBindingSource.DataSource = this.customerBindingSource;
             // 
             // Form1
             // 

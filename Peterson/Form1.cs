@@ -34,6 +34,23 @@ namespace Peterson
 
         }
 
+        private void newButton_Click(object sender, EventArgs e)
+        {
+            var newInvoice = new Form2();
+            newInvoice.Show();
+        }
+
+        private void viewButton_Click(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedIndex < 0)
+                MessageBox.Show("Please select an invoice from the list", "Selection Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else
+            {
+                var viewInvoice = new Form3();
+                viewInvoice.Show();
+            }
+        }
+
        
     }
 }
