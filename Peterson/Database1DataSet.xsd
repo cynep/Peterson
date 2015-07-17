@@ -132,7 +132,7 @@ SELECT Phone_Number, Invoice_Number, Car_Year, Car_Make, Car_Model, VIN, Invoice
                 </InsertCommand>
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT Phone_Number, Invoice_Number, Car_Year, Car_Make, Car_Model, VIN, Invoice_Date FROM dbo.InvoiceList</CommandText>
+                    <CommandText>SELECT Phone_Number, Invoice_Number, Car_Year, Car_Make, Car_Model, VIN, Invoice_Date FROM InvoiceList</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -241,7 +241,7 @@ SELECT Phone_Number, Invoice_Number, Car_Year, Car_Make, Car_Model, VIN, Invoice
         <xs:element name="InvoiceList" msprop:Generator_TableClassName="InvoiceListDataTable" msprop:Generator_TableVarName="tableInvoiceList" msprop:Generator_TablePropName="InvoiceList" msprop:Generator_RowDeletingName="InvoiceListRowDeleting" msprop:Generator_RowChangingName="InvoiceListRowChanging" msprop:Generator_RowEvHandlerName="InvoiceListRowChangeEventHandler" msprop:Generator_RowDeletedName="InvoiceListRowDeleted" msprop:Generator_UserTableName="InvoiceList" msprop:Generator_RowChangedName="InvoiceListRowChanged" msprop:Generator_RowEvArgName="InvoiceListRowChangeEvent" msprop:Generator_RowClassName="InvoiceListRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Phone_Number" msprop:Generator_ColumnVarNameInTable="columnPhone_Number" msprop:Generator_ColumnPropNameInRow="Phone_Number" msprop:Generator_ColumnPropNameInTable="Phone_NumberColumn" msprop:Generator_UserColumnName="Phone_Number">
+              <xs:element name="Phone_Number" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="Phone_Number" msprop:Generator_ColumnVarNameInTable="columnPhone_Number" msprop:Generator_ColumnPropNameInTable="Phone_NumberColumn" msprop:Generator_UserColumnName="Phone_Number">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
@@ -255,27 +255,28 @@ SELECT Phone_Number, Invoice_Number, Car_Year, Car_Make, Car_Model, VIN, Invoice
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Car_Year" msprop:Generator_ColumnVarNameInTable="columnCar_Year" msprop:Generator_ColumnPropNameInRow="Car_Year" msprop:Generator_ColumnPropNameInTable="Car_YearColumn" msprop:Generator_UserColumnName="Car_Year" minOccurs="0">
+              <xs:element name="Car_Year" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Car_Year" msprop:Generator_ColumnVarNameInTable="columnCar_Year" msprop:Generator_ColumnPropNameInTable="Car_YearColumn" msprop:Generator_UserColumnName="Car_Year" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="4" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Car_Make" msprop:Generator_ColumnVarNameInTable="columnCar_Make" msprop:Generator_ColumnPropNameInRow="Car_Make" msprop:Generator_ColumnPropNameInTable="Car_MakeColumn" msprop:Generator_UserColumnName="Car_Make" minOccurs="0">
+              <xs:element name="Car_Make" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Car_Make" msprop:Generator_ColumnVarNameInTable="columnCar_Make" msprop:Generator_ColumnPropNameInTable="Car_MakeColumn" msprop:Generator_UserColumnName="Car_Make" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Car_Model" msprop:Generator_ColumnVarNameInTable="columnCar_Model" msprop:Generator_ColumnPropNameInRow="Car_Model" msprop:Generator_ColumnPropNameInTable="Car_ModelColumn" msprop:Generator_UserColumnName="Car_Model" minOccurs="0">
+              <xs:element name="Car_Model" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Car_Model" msprop:Generator_ColumnVarNameInTable="columnCar_Model" msprop:Generator_ColumnPropNameInTable="Car_ModelColumn" msprop:Generator_UserColumnName="Car_Model" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="Car_Engine" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Car_Engine" msprop:Generator_ColumnVarNameInTable="columnCar_Engine" msprop:Generator_ColumnPropNameInTable="Car_EngineColumn" msprop:Generator_UserColumnName="Car_Engine" type="xs:string" minOccurs="0" />
               <xs:element name="VIN" msprop:Generator_ColumnVarNameInTable="columnVIN" msprop:Generator_ColumnPropNameInRow="VIN" msprop:Generator_ColumnPropNameInTable="VINColumn" msprop:Generator_UserColumnName="VIN">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -284,6 +285,46 @@ SELECT Phone_Number, Invoice_Number, Car_Year, Car_Make, Car_Model, VIN, Invoice
                 </xs:simpleType>
               </xs:element>
               <xs:element name="Invoice_Date" msprop:Generator_ColumnVarNameInTable="columnInvoice_Date" msprop:Generator_ColumnPropNameInRow="Invoice_Date" msprop:Generator_ColumnPropNameInTable="Invoice_DateColumn" msprop:Generator_UserColumnName="Invoice_Date" type="xs:dateTime" />
+              <xs:element name="Parts_Line_1" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Parts_Line_1" msprop:Generator_ColumnVarNameInTable="columnParts_Line_1" msprop:Generator_ColumnPropNameInTable="Parts_Line_1Column" msprop:Generator_UserColumnName="Parts_Line_1" type="xs:string" minOccurs="0" />
+              <xs:element name="Parts_Price_1" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Parts_Price_1" msprop:Generator_ColumnVarNameInTable="columnParts_Price_1" msprop:Generator_ColumnPropNameInTable="Parts_Price_1Column" msprop:Generator_UserColumnName="Parts_Price_1" type="xs:string" minOccurs="0" />
+              <xs:element name="Labor_Line_1" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Labor_Line_1" msprop:Generator_ColumnVarNameInTable="columnLabor_Line_1" msprop:Generator_ColumnPropNameInTable="Labor_Line_1Column" msprop:Generator_UserColumnName="Labor_Line_1" type="xs:string" minOccurs="0" />
+              <xs:element name="Labor_Price_1" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Labor_Price_1" msprop:Generator_ColumnVarNameInTable="columnLabor_Price_1" msprop:Generator_ColumnPropNameInTable="Labor_Price_1Column" msprop:Generator_UserColumnName="Labor_Price_1" type="xs:string" minOccurs="0" />
+              <xs:element name="Parts_Line_2" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Parts_Line_2" msprop:Generator_ColumnVarNameInTable="columnParts_Line_2" msprop:Generator_ColumnPropNameInTable="Parts_Line_2Column" msprop:Generator_UserColumnName="Parts_Line_2" type="xs:string" minOccurs="0" />
+              <xs:element name="Parts_Price_2" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Parts_Price_2" msprop:Generator_ColumnVarNameInTable="columnParts_Price_2" msprop:Generator_ColumnPropNameInTable="Parts_Price_2Column" msprop:Generator_UserColumnName="Parts_Price_2" type="xs:string" minOccurs="0" />
+              <xs:element name="Labor_Line_2" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Labor_Line_2" msprop:Generator_ColumnVarNameInTable="columnLabor_Line_2" msprop:Generator_ColumnPropNameInTable="Labor_Line_2Column" msprop:Generator_UserColumnName="Labor_Line_2" type="xs:string" minOccurs="0" />
+              <xs:element name="Labor_Price_2" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Labor_Price_2" msprop:Generator_ColumnVarNameInTable="columnLabor_Price_2" msprop:Generator_ColumnPropNameInTable="Labor_Price_2Column" msprop:Generator_UserColumnName="Labor_Price_2" type="xs:string" minOccurs="0" />
+              <xs:element name="Parts_Line_3" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Parts_Line_3" msprop:Generator_ColumnVarNameInTable="columnParts_Line_3" msprop:Generator_ColumnPropNameInTable="Parts_Line_3Column" msprop:Generator_UserColumnName="Parts_Line_3" type="xs:string" minOccurs="0" />
+              <xs:element name="Parts_Price_3" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Parts_Price_3" msprop:Generator_ColumnVarNameInTable="columnParts_Price_3" msprop:Generator_ColumnPropNameInTable="Parts_Price_3Column" msprop:Generator_UserColumnName="Parts_Price_3" type="xs:string" minOccurs="0" />
+              <xs:element name="Labor_Line_3" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Labor_Line_3" msprop:Generator_ColumnVarNameInTable="columnLabor_Line_3" msprop:Generator_ColumnPropNameInTable="Labor_Line_3Column" msprop:Generator_UserColumnName="Labor_Line_3" type="xs:string" minOccurs="0" />
+              <xs:element name="Labor_Price_3" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Labor_Price_3" msprop:Generator_ColumnVarNameInTable="columnLabor_Price_3" msprop:Generator_ColumnPropNameInTable="Labor_Price_3Column" msprop:Generator_UserColumnName="Labor_Price_3" type="xs:string" minOccurs="0" />
+              <xs:element name="Parts_Line_4" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Parts_Line_4" msprop:Generator_ColumnVarNameInTable="columnParts_Line_4" msprop:Generator_ColumnPropNameInTable="Parts_Line_4Column" msprop:Generator_UserColumnName="Parts_Line_4" type="xs:string" minOccurs="0" />
+              <xs:element name="Parts_Price_4" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Parts_Price_4" msprop:Generator_ColumnVarNameInTable="columnParts_Price_4" msprop:Generator_ColumnPropNameInTable="Parts_Price_4Column" msprop:Generator_UserColumnName="Parts_Price_4" type="xs:string" minOccurs="0" />
+              <xs:element name="Labor_Line_4" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Labor_Line_4" msprop:Generator_ColumnVarNameInTable="columnLabor_Line_4" msprop:Generator_ColumnPropNameInTable="Labor_Line_4Column" msprop:Generator_UserColumnName="Labor_Line_4" type="xs:string" minOccurs="0" />
+              <xs:element name="Labor_Price_4" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Labor_Price_4" msprop:Generator_ColumnVarNameInTable="columnLabor_Price_4" msprop:Generator_ColumnPropNameInTable="Labor_Price_4Column" msprop:Generator_UserColumnName="Labor_Price_4" type="xs:string" minOccurs="0" />
+              <xs:element name="Parts_Line_5" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Parts_Line_5" msprop:Generator_ColumnVarNameInTable="columnParts_Line_5" msprop:Generator_ColumnPropNameInTable="Parts_Line_5Column" msprop:Generator_UserColumnName="Parts_Line_5" type="xs:string" minOccurs="0" />
+              <xs:element name="Parts_Price_5" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Parts_Price_5" msprop:Generator_ColumnVarNameInTable="columnParts_Price_5" msprop:Generator_ColumnPropNameInTable="Parts_Price_5Column" msprop:Generator_UserColumnName="Parts_Price_5" type="xs:string" minOccurs="0" />
+              <xs:element name="Labor_Line_5" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Labor_Line_5" msprop:Generator_ColumnVarNameInTable="columnLabor_Line_5" msprop:Generator_ColumnPropNameInTable="Labor_Line_5Column" msprop:Generator_UserColumnName="Labor_Line_5" type="xs:string" minOccurs="0" />
+              <xs:element name="Labor_Price_5" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Labor_Price_5" msprop:Generator_ColumnVarNameInTable="columnLabor_Price_5" msprop:Generator_ColumnPropNameInTable="Labor_Price_5Column" msprop:Generator_UserColumnName="Labor_Price_5" type="xs:string" minOccurs="0" />
+              <xs:element name="Parts_Line_6" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Parts_Line_6" msprop:Generator_ColumnVarNameInTable="columnParts_Line_6" msprop:Generator_ColumnPropNameInTable="Parts_Line_6Column" msprop:Generator_UserColumnName="Parts_Line_6" type="xs:string" minOccurs="0" />
+              <xs:element name="Parts_Price_6" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Parts_Price_6" msprop:Generator_ColumnVarNameInTable="columnParts_Price_6" msprop:Generator_ColumnPropNameInTable="Parts_Price_6Column" msprop:Generator_UserColumnName="Parts_Price_6" type="xs:string" minOccurs="0" />
+              <xs:element name="Labor_Line_6" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Labor_Line_6" msprop:Generator_ColumnVarNameInTable="columnLabor_Line_6" msprop:Generator_ColumnPropNameInTable="Labor_Line_6Column" msprop:Generator_UserColumnName="Labor_Line_6" type="xs:string" minOccurs="0" />
+              <xs:element name="Labor_Price_6" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Labor_Price_6" msprop:Generator_ColumnVarNameInTable="columnLabor_Price_6" msprop:Generator_ColumnPropNameInTable="Labor_Price_6Column" msprop:Generator_UserColumnName="Labor_Price_6" type="xs:string" minOccurs="0" />
+              <xs:element name="Parts_Line_7" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Parts_Line_7" msprop:Generator_ColumnVarNameInTable="columnParts_Line_7" msprop:Generator_ColumnPropNameInTable="Parts_Line_7Column" msprop:Generator_UserColumnName="Parts_Line_7" type="xs:string" minOccurs="0" />
+              <xs:element name="Parts_Price_7" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Parts_Price_7" msprop:Generator_ColumnVarNameInTable="columnParts_Price_7" msprop:Generator_ColumnPropNameInTable="Parts_Price_7Column" msprop:Generator_UserColumnName="Parts_Price_7" type="xs:string" minOccurs="0" />
+              <xs:element name="Labor_Line_7" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Labor_Line_7" msprop:Generator_ColumnVarNameInTable="columnLabor_Line_7" msprop:Generator_ColumnPropNameInTable="Labor_Line_7Column" msprop:Generator_UserColumnName="Labor_Line_7" type="xs:string" minOccurs="0" />
+              <xs:element name="Labor_Price_7" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Labor_Price_7" msprop:Generator_ColumnVarNameInTable="columnLabor_Price_7" msprop:Generator_ColumnPropNameInTable="Labor_Price_7Column" msprop:Generator_UserColumnName="Labor_Price_7" type="xs:string" minOccurs="0" />
+              <xs:element name="Parts_Line_8" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Parts_Line_8" msprop:Generator_ColumnVarNameInTable="columnParts_Line_8" msprop:Generator_ColumnPropNameInTable="Parts_Line_8Column" msprop:Generator_UserColumnName="Parts_Line_8" type="xs:string" minOccurs="0" />
+              <xs:element name="Parts_Price_8" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Parts_Price_8" msprop:Generator_ColumnVarNameInTable="columnParts_Price_8" msprop:Generator_ColumnPropNameInTable="Parts_Price_8Column" msprop:Generator_UserColumnName="Parts_Price_8" type="xs:string" minOccurs="0" />
+              <xs:element name="Labor_Line_8" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Labor_Line_8" msprop:Generator_ColumnVarNameInTable="columnLabor_Line_8" msprop:Generator_ColumnPropNameInTable="Labor_Line_8Column" msprop:Generator_UserColumnName="Labor_Line_8" type="xs:string" minOccurs="0" />
+              <xs:element name="Labor_Price_8" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Labor_Price_8" msprop:Generator_ColumnVarNameInTable="columnLabor_Price_8" msprop:Generator_ColumnPropNameInTable="Labor_Price_8Column" msprop:Generator_UserColumnName="Labor_Price_8" type="xs:string" minOccurs="0" />
+              <xs:element name="Parts_Line_9" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Parts_Line_9" msprop:Generator_ColumnVarNameInTable="columnParts_Line_9" msprop:Generator_ColumnPropNameInTable="Parts_Line_9Column" msprop:Generator_UserColumnName="Parts_Line_9" type="xs:string" minOccurs="0" />
+              <xs:element name="Parts_Price_9" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Parts_Price_9" msprop:Generator_ColumnVarNameInTable="columnParts_Price_9" msprop:Generator_ColumnPropNameInTable="Parts_Price_9Column" msprop:Generator_UserColumnName="Parts_Price_9" type="xs:string" minOccurs="0" />
+              <xs:element name="Labor_Line_9" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Labor_Line_9" msprop:Generator_ColumnVarNameInTable="columnLabor_Line_9" msprop:Generator_ColumnPropNameInTable="Labor_Line_9Column" msprop:Generator_UserColumnName="Labor_Line_9" type="xs:string" minOccurs="0" />
+              <xs:element name="Labor_Price_9" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Labor_Price_9" msprop:Generator_ColumnVarNameInTable="columnLabor_Price_9" msprop:Generator_ColumnPropNameInTable="Labor_Price_9Column" msprop:Generator_UserColumnName="Labor_Price_9" type="xs:string" minOccurs="0" />
+              <xs:element name="Parts_Line_10" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Parts_Line_10" msprop:Generator_ColumnVarNameInTable="columnParts_Line_10" msprop:Generator_ColumnPropNameInTable="Parts_Line_10Column" msprop:Generator_UserColumnName="Parts_Line_10" type="xs:string" minOccurs="0" />
+              <xs:element name="Parts_Price_10" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Parts_Price_10" msprop:Generator_ColumnVarNameInTable="columnParts_Price_10" msprop:Generator_ColumnPropNameInTable="Parts_Price_10Column" msprop:Generator_UserColumnName="Parts_Price_10" type="xs:string" minOccurs="0" />
+              <xs:element name="Labor_Line_10" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Labor_Line_10" msprop:Generator_ColumnVarNameInTable="columnLabor_Line_10" msprop:Generator_ColumnPropNameInTable="Labor_Line_10Column" msprop:Generator_UserColumnName="Labor_Line_10" type="xs:string" minOccurs="0" />
+              <xs:element name="Labor_Price_10" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Labor_Price_10" msprop:Generator_ColumnVarNameInTable="columnLabor_Price_10" msprop:Generator_ColumnPropNameInTable="Labor_Price_10Column" msprop:Generator_UserColumnName="Labor_Price_10" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -292,6 +333,10 @@ SELECT Phone_Number, Invoice_Number, Car_Year, Car_Make, Car_Model, VIN, Invoice
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:Customer" />
       <xs:field xpath="mstns:Phone_Number" />
+    </xs:unique>
+    <xs:unique name="Constraint2">
+      <xs:selector xpath=".//mstns:Customer" />
+      <xs:field xpath="mstns:Id" />
     </xs:unique>
     <xs:unique name="InvoiceList_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:InvoiceList" />

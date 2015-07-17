@@ -542,11 +542,14 @@ namespace Peterson {
                 base.Columns.Add(this.columnZip);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnPhone_Number}, true));
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint2", new global::System.Data.DataColumn[] {
+                                this.columnId}, false));
                 this.columnId.AutoIncrement = true;
                 this.columnId.AutoIncrementSeed = -1;
                 this.columnId.AutoIncrementStep = -1;
                 this.columnId.AllowDBNull = false;
                 this.columnId.ReadOnly = true;
+                this.columnId.Unique = true;
                 this.columnLast_Name.MaxLength = 50;
                 this.columnFirst_Name.MaxLength = 50;
                 this.columnPhone_Number.AllowDBNull = false;
@@ -699,9 +702,91 @@ namespace Peterson {
             
             private global::System.Data.DataColumn columnCar_Model;
             
+            private global::System.Data.DataColumn columnCar_Engine;
+            
             private global::System.Data.DataColumn columnVIN;
             
             private global::System.Data.DataColumn columnInvoice_Date;
+            
+            private global::System.Data.DataColumn columnParts_Line_1;
+            
+            private global::System.Data.DataColumn columnParts_Price_1;
+            
+            private global::System.Data.DataColumn columnLabor_Line_1;
+            
+            private global::System.Data.DataColumn columnLabor_Price_1;
+            
+            private global::System.Data.DataColumn columnParts_Line_2;
+            
+            private global::System.Data.DataColumn columnParts_Price_2;
+            
+            private global::System.Data.DataColumn columnLabor_Line_2;
+            
+            private global::System.Data.DataColumn columnLabor_Price_2;
+            
+            private global::System.Data.DataColumn columnParts_Line_3;
+            
+            private global::System.Data.DataColumn columnParts_Price_3;
+            
+            private global::System.Data.DataColumn columnLabor_Line_3;
+            
+            private global::System.Data.DataColumn columnLabor_Price_3;
+            
+            private global::System.Data.DataColumn columnParts_Line_4;
+            
+            private global::System.Data.DataColumn columnParts_Price_4;
+            
+            private global::System.Data.DataColumn columnLabor_Line_4;
+            
+            private global::System.Data.DataColumn columnLabor_Price_4;
+            
+            private global::System.Data.DataColumn columnParts_Line_5;
+            
+            private global::System.Data.DataColumn columnParts_Price_5;
+            
+            private global::System.Data.DataColumn columnLabor_Line_5;
+            
+            private global::System.Data.DataColumn columnLabor_Price_5;
+            
+            private global::System.Data.DataColumn columnParts_Line_6;
+            
+            private global::System.Data.DataColumn columnParts_Price_6;
+            
+            private global::System.Data.DataColumn columnLabor_Line_6;
+            
+            private global::System.Data.DataColumn columnLabor_Price_6;
+            
+            private global::System.Data.DataColumn columnParts_Line_7;
+            
+            private global::System.Data.DataColumn columnParts_Price_7;
+            
+            private global::System.Data.DataColumn columnLabor_Line_7;
+            
+            private global::System.Data.DataColumn columnLabor_Price_7;
+            
+            private global::System.Data.DataColumn columnParts_Line_8;
+            
+            private global::System.Data.DataColumn columnParts_Price_8;
+            
+            private global::System.Data.DataColumn columnLabor_Line_8;
+            
+            private global::System.Data.DataColumn columnLabor_Price_8;
+            
+            private global::System.Data.DataColumn columnParts_Line_9;
+            
+            private global::System.Data.DataColumn columnParts_Price_9;
+            
+            private global::System.Data.DataColumn columnLabor_Line_9;
+            
+            private global::System.Data.DataColumn columnLabor_Price_9;
+            
+            private global::System.Data.DataColumn columnParts_Line_10;
+            
+            private global::System.Data.DataColumn columnParts_Price_10;
+            
+            private global::System.Data.DataColumn columnLabor_Line_10;
+            
+            private global::System.Data.DataColumn columnLabor_Price_10;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -778,6 +863,14 @@ namespace Peterson {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Car_EngineColumn {
+                get {
+                    return this.columnCar_Engine;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn VINColumn {
                 get {
                     return this.columnVIN;
@@ -789,6 +882,326 @@ namespace Peterson {
             public global::System.Data.DataColumn Invoice_DateColumn {
                 get {
                     return this.columnInvoice_Date;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Parts_Line_1Column {
+                get {
+                    return this.columnParts_Line_1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Parts_Price_1Column {
+                get {
+                    return this.columnParts_Price_1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Labor_Line_1Column {
+                get {
+                    return this.columnLabor_Line_1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Labor_Price_1Column {
+                get {
+                    return this.columnLabor_Price_1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Parts_Line_2Column {
+                get {
+                    return this.columnParts_Line_2;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Parts_Price_2Column {
+                get {
+                    return this.columnParts_Price_2;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Labor_Line_2Column {
+                get {
+                    return this.columnLabor_Line_2;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Labor_Price_2Column {
+                get {
+                    return this.columnLabor_Price_2;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Parts_Line_3Column {
+                get {
+                    return this.columnParts_Line_3;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Parts_Price_3Column {
+                get {
+                    return this.columnParts_Price_3;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Labor_Line_3Column {
+                get {
+                    return this.columnLabor_Line_3;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Labor_Price_3Column {
+                get {
+                    return this.columnLabor_Price_3;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Parts_Line_4Column {
+                get {
+                    return this.columnParts_Line_4;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Parts_Price_4Column {
+                get {
+                    return this.columnParts_Price_4;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Labor_Line_4Column {
+                get {
+                    return this.columnLabor_Line_4;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Labor_Price_4Column {
+                get {
+                    return this.columnLabor_Price_4;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Parts_Line_5Column {
+                get {
+                    return this.columnParts_Line_5;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Parts_Price_5Column {
+                get {
+                    return this.columnParts_Price_5;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Labor_Line_5Column {
+                get {
+                    return this.columnLabor_Line_5;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Labor_Price_5Column {
+                get {
+                    return this.columnLabor_Price_5;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Parts_Line_6Column {
+                get {
+                    return this.columnParts_Line_6;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Parts_Price_6Column {
+                get {
+                    return this.columnParts_Price_6;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Labor_Line_6Column {
+                get {
+                    return this.columnLabor_Line_6;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Labor_Price_6Column {
+                get {
+                    return this.columnLabor_Price_6;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Parts_Line_7Column {
+                get {
+                    return this.columnParts_Line_7;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Parts_Price_7Column {
+                get {
+                    return this.columnParts_Price_7;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Labor_Line_7Column {
+                get {
+                    return this.columnLabor_Line_7;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Labor_Price_7Column {
+                get {
+                    return this.columnLabor_Price_7;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Parts_Line_8Column {
+                get {
+                    return this.columnParts_Line_8;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Parts_Price_8Column {
+                get {
+                    return this.columnParts_Price_8;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Labor_Line_8Column {
+                get {
+                    return this.columnLabor_Line_8;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Labor_Price_8Column {
+                get {
+                    return this.columnLabor_Price_8;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Parts_Line_9Column {
+                get {
+                    return this.columnParts_Line_9;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Parts_Price_9Column {
+                get {
+                    return this.columnParts_Price_9;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Labor_Line_9Column {
+                get {
+                    return this.columnLabor_Line_9;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Labor_Price_9Column {
+                get {
+                    return this.columnLabor_Price_9;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Parts_Line_10Column {
+                get {
+                    return this.columnParts_Line_10;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Parts_Price_10Column {
+                get {
+                    return this.columnParts_Price_10;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Labor_Line_10Column {
+                get {
+                    return this.columnLabor_Line_10;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Labor_Price_10Column {
+                get {
+                    return this.columnLabor_Price_10;
                 }
             }
             
@@ -829,7 +1242,55 @@ namespace Peterson {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public InvoiceListRow AddInvoiceListRow(CustomerRow parentCustomerRowByFK_InvoiceList_ToCustomer, string Invoice_Number, string Car_Year, string Car_Make, string Car_Model, string VIN, System.DateTime Invoice_Date) {
+            public InvoiceListRow AddInvoiceListRow(
+                        CustomerRow parentCustomerRowByFK_InvoiceList_ToCustomer, 
+                        string Invoice_Number, 
+                        string Car_Year, 
+                        string Car_Make, 
+                        string Car_Model, 
+                        string Car_Engine, 
+                        string VIN, 
+                        System.DateTime Invoice_Date, 
+                        string Parts_Line_1, 
+                        string Parts_Price_1, 
+                        string Labor_Line_1, 
+                        string Labor_Price_1, 
+                        string Parts_Line_2, 
+                        string Parts_Price_2, 
+                        string Labor_Line_2, 
+                        string Labor_Price_2, 
+                        string Parts_Line_3, 
+                        string Parts_Price_3, 
+                        string Labor_Line_3, 
+                        string Labor_Price_3, 
+                        string Parts_Line_4, 
+                        string Parts_Price_4, 
+                        string Labor_Line_4, 
+                        string Labor_Price_4, 
+                        string Parts_Line_5, 
+                        string Parts_Price_5, 
+                        string Labor_Line_5, 
+                        string Labor_Price_5, 
+                        string Parts_Line_6, 
+                        string Parts_Price_6, 
+                        string Labor_Line_6, 
+                        string Labor_Price_6, 
+                        string Parts_Line_7, 
+                        string Parts_Price_7, 
+                        string Labor_Line_7, 
+                        string Labor_Price_7, 
+                        string Parts_Line_8, 
+                        string Parts_Price_8, 
+                        string Labor_Line_8, 
+                        string Labor_Price_8, 
+                        string Parts_Line_9, 
+                        string Parts_Price_9, 
+                        string Labor_Line_9, 
+                        string Labor_Price_9, 
+                        string Parts_Line_10, 
+                        string Parts_Price_10, 
+                        string Labor_Line_10, 
+                        string Labor_Price_10) {
                 InvoiceListRow rowInvoiceListRow = ((InvoiceListRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -837,8 +1298,49 @@ namespace Peterson {
                         Car_Year,
                         Car_Make,
                         Car_Model,
+                        Car_Engine,
                         VIN,
-                        Invoice_Date};
+                        Invoice_Date,
+                        Parts_Line_1,
+                        Parts_Price_1,
+                        Labor_Line_1,
+                        Labor_Price_1,
+                        Parts_Line_2,
+                        Parts_Price_2,
+                        Labor_Line_2,
+                        Labor_Price_2,
+                        Parts_Line_3,
+                        Parts_Price_3,
+                        Labor_Line_3,
+                        Labor_Price_3,
+                        Parts_Line_4,
+                        Parts_Price_4,
+                        Labor_Line_4,
+                        Labor_Price_4,
+                        Parts_Line_5,
+                        Parts_Price_5,
+                        Labor_Line_5,
+                        Labor_Price_5,
+                        Parts_Line_6,
+                        Parts_Price_6,
+                        Labor_Line_6,
+                        Labor_Price_6,
+                        Parts_Line_7,
+                        Parts_Price_7,
+                        Labor_Line_7,
+                        Labor_Price_7,
+                        Parts_Line_8,
+                        Parts_Price_8,
+                        Labor_Line_8,
+                        Labor_Price_8,
+                        Parts_Line_9,
+                        Parts_Price_9,
+                        Labor_Line_9,
+                        Labor_Price_9,
+                        Parts_Line_10,
+                        Parts_Price_10,
+                        Labor_Line_10,
+                        Labor_Price_10};
                 if ((parentCustomerRowByFK_InvoiceList_ToCustomer != null)) {
                     columnValuesArray[0] = parentCustomerRowByFK_InvoiceList_ToCustomer[3];
                 }
@@ -876,8 +1378,49 @@ namespace Peterson {
                 this.columnCar_Year = base.Columns["Car_Year"];
                 this.columnCar_Make = base.Columns["Car_Make"];
                 this.columnCar_Model = base.Columns["Car_Model"];
+                this.columnCar_Engine = base.Columns["Car_Engine"];
                 this.columnVIN = base.Columns["VIN"];
                 this.columnInvoice_Date = base.Columns["Invoice_Date"];
+                this.columnParts_Line_1 = base.Columns["Parts_Line_1"];
+                this.columnParts_Price_1 = base.Columns["Parts_Price_1"];
+                this.columnLabor_Line_1 = base.Columns["Labor_Line_1"];
+                this.columnLabor_Price_1 = base.Columns["Labor_Price_1"];
+                this.columnParts_Line_2 = base.Columns["Parts_Line_2"];
+                this.columnParts_Price_2 = base.Columns["Parts_Price_2"];
+                this.columnLabor_Line_2 = base.Columns["Labor_Line_2"];
+                this.columnLabor_Price_2 = base.Columns["Labor_Price_2"];
+                this.columnParts_Line_3 = base.Columns["Parts_Line_3"];
+                this.columnParts_Price_3 = base.Columns["Parts_Price_3"];
+                this.columnLabor_Line_3 = base.Columns["Labor_Line_3"];
+                this.columnLabor_Price_3 = base.Columns["Labor_Price_3"];
+                this.columnParts_Line_4 = base.Columns["Parts_Line_4"];
+                this.columnParts_Price_4 = base.Columns["Parts_Price_4"];
+                this.columnLabor_Line_4 = base.Columns["Labor_Line_4"];
+                this.columnLabor_Price_4 = base.Columns["Labor_Price_4"];
+                this.columnParts_Line_5 = base.Columns["Parts_Line_5"];
+                this.columnParts_Price_5 = base.Columns["Parts_Price_5"];
+                this.columnLabor_Line_5 = base.Columns["Labor_Line_5"];
+                this.columnLabor_Price_5 = base.Columns["Labor_Price_5"];
+                this.columnParts_Line_6 = base.Columns["Parts_Line_6"];
+                this.columnParts_Price_6 = base.Columns["Parts_Price_6"];
+                this.columnLabor_Line_6 = base.Columns["Labor_Line_6"];
+                this.columnLabor_Price_6 = base.Columns["Labor_Price_6"];
+                this.columnParts_Line_7 = base.Columns["Parts_Line_7"];
+                this.columnParts_Price_7 = base.Columns["Parts_Price_7"];
+                this.columnLabor_Line_7 = base.Columns["Labor_Line_7"];
+                this.columnLabor_Price_7 = base.Columns["Labor_Price_7"];
+                this.columnParts_Line_8 = base.Columns["Parts_Line_8"];
+                this.columnParts_Price_8 = base.Columns["Parts_Price_8"];
+                this.columnLabor_Line_8 = base.Columns["Labor_Line_8"];
+                this.columnLabor_Price_8 = base.Columns["Labor_Price_8"];
+                this.columnParts_Line_9 = base.Columns["Parts_Line_9"];
+                this.columnParts_Price_9 = base.Columns["Parts_Price_9"];
+                this.columnLabor_Line_9 = base.Columns["Labor_Line_9"];
+                this.columnLabor_Price_9 = base.Columns["Labor_Price_9"];
+                this.columnParts_Line_10 = base.Columns["Parts_Line_10"];
+                this.columnParts_Price_10 = base.Columns["Parts_Price_10"];
+                this.columnLabor_Line_10 = base.Columns["Labor_Line_10"];
+                this.columnLabor_Price_10 = base.Columns["Labor_Price_10"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -893,10 +1436,92 @@ namespace Peterson {
                 base.Columns.Add(this.columnCar_Make);
                 this.columnCar_Model = new global::System.Data.DataColumn("Car_Model", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCar_Model);
+                this.columnCar_Engine = new global::System.Data.DataColumn("Car_Engine", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCar_Engine);
                 this.columnVIN = new global::System.Data.DataColumn("VIN", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnVIN);
                 this.columnInvoice_Date = new global::System.Data.DataColumn("Invoice_Date", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnInvoice_Date);
+                this.columnParts_Line_1 = new global::System.Data.DataColumn("Parts_Line_1", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnParts_Line_1);
+                this.columnParts_Price_1 = new global::System.Data.DataColumn("Parts_Price_1", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnParts_Price_1);
+                this.columnLabor_Line_1 = new global::System.Data.DataColumn("Labor_Line_1", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLabor_Line_1);
+                this.columnLabor_Price_1 = new global::System.Data.DataColumn("Labor_Price_1", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLabor_Price_1);
+                this.columnParts_Line_2 = new global::System.Data.DataColumn("Parts_Line_2", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnParts_Line_2);
+                this.columnParts_Price_2 = new global::System.Data.DataColumn("Parts_Price_2", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnParts_Price_2);
+                this.columnLabor_Line_2 = new global::System.Data.DataColumn("Labor_Line_2", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLabor_Line_2);
+                this.columnLabor_Price_2 = new global::System.Data.DataColumn("Labor_Price_2", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLabor_Price_2);
+                this.columnParts_Line_3 = new global::System.Data.DataColumn("Parts_Line_3", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnParts_Line_3);
+                this.columnParts_Price_3 = new global::System.Data.DataColumn("Parts_Price_3", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnParts_Price_3);
+                this.columnLabor_Line_3 = new global::System.Data.DataColumn("Labor_Line_3", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLabor_Line_3);
+                this.columnLabor_Price_3 = new global::System.Data.DataColumn("Labor_Price_3", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLabor_Price_3);
+                this.columnParts_Line_4 = new global::System.Data.DataColumn("Parts_Line_4", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnParts_Line_4);
+                this.columnParts_Price_4 = new global::System.Data.DataColumn("Parts_Price_4", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnParts_Price_4);
+                this.columnLabor_Line_4 = new global::System.Data.DataColumn("Labor_Line_4", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLabor_Line_4);
+                this.columnLabor_Price_4 = new global::System.Data.DataColumn("Labor_Price_4", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLabor_Price_4);
+                this.columnParts_Line_5 = new global::System.Data.DataColumn("Parts_Line_5", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnParts_Line_5);
+                this.columnParts_Price_5 = new global::System.Data.DataColumn("Parts_Price_5", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnParts_Price_5);
+                this.columnLabor_Line_5 = new global::System.Data.DataColumn("Labor_Line_5", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLabor_Line_5);
+                this.columnLabor_Price_5 = new global::System.Data.DataColumn("Labor_Price_5", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLabor_Price_5);
+                this.columnParts_Line_6 = new global::System.Data.DataColumn("Parts_Line_6", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnParts_Line_6);
+                this.columnParts_Price_6 = new global::System.Data.DataColumn("Parts_Price_6", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnParts_Price_6);
+                this.columnLabor_Line_6 = new global::System.Data.DataColumn("Labor_Line_6", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLabor_Line_6);
+                this.columnLabor_Price_6 = new global::System.Data.DataColumn("Labor_Price_6", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLabor_Price_6);
+                this.columnParts_Line_7 = new global::System.Data.DataColumn("Parts_Line_7", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnParts_Line_7);
+                this.columnParts_Price_7 = new global::System.Data.DataColumn("Parts_Price_7", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnParts_Price_7);
+                this.columnLabor_Line_7 = new global::System.Data.DataColumn("Labor_Line_7", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLabor_Line_7);
+                this.columnLabor_Price_7 = new global::System.Data.DataColumn("Labor_Price_7", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLabor_Price_7);
+                this.columnParts_Line_8 = new global::System.Data.DataColumn("Parts_Line_8", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnParts_Line_8);
+                this.columnParts_Price_8 = new global::System.Data.DataColumn("Parts_Price_8", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnParts_Price_8);
+                this.columnLabor_Line_8 = new global::System.Data.DataColumn("Labor_Line_8", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLabor_Line_8);
+                this.columnLabor_Price_8 = new global::System.Data.DataColumn("Labor_Price_8", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLabor_Price_8);
+                this.columnParts_Line_9 = new global::System.Data.DataColumn("Parts_Line_9", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnParts_Line_9);
+                this.columnParts_Price_9 = new global::System.Data.DataColumn("Parts_Price_9", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnParts_Price_9);
+                this.columnLabor_Line_9 = new global::System.Data.DataColumn("Labor_Line_9", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLabor_Line_9);
+                this.columnLabor_Price_9 = new global::System.Data.DataColumn("Labor_Price_9", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLabor_Price_9);
+                this.columnParts_Line_10 = new global::System.Data.DataColumn("Parts_Line_10", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnParts_Line_10);
+                this.columnParts_Price_10 = new global::System.Data.DataColumn("Parts_Price_10", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnParts_Price_10);
+                this.columnLabor_Line_10 = new global::System.Data.DataColumn("Labor_Line_10", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLabor_Line_10);
+                this.columnLabor_Price_10 = new global::System.Data.DataColumn("Labor_Price_10", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLabor_Price_10);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnInvoice_Number}, true));
                 this.columnPhone_Number.AllowDBNull = false;
@@ -1292,11 +1917,11 @@ namespace Peterson {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Car_Year {
                 get {
-                    try {
-                        return ((string)(this[this.tableInvoiceList.Car_YearColumn]));
+                    if (this.IsCar_YearNull()) {
+                        return null;
                     }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Car_Year\' in table \'InvoiceList\' is DBNull.", e);
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Car_YearColumn]));
                     }
                 }
                 set {
@@ -1308,11 +1933,11 @@ namespace Peterson {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Car_Make {
                 get {
-                    try {
-                        return ((string)(this[this.tableInvoiceList.Car_MakeColumn]));
+                    if (this.IsCar_MakeNull()) {
+                        return null;
                     }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Car_Make\' in table \'InvoiceList\' is DBNull.", e);
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Car_MakeColumn]));
                     }
                 }
                 set {
@@ -1324,15 +1949,31 @@ namespace Peterson {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Car_Model {
                 get {
-                    try {
-                        return ((string)(this[this.tableInvoiceList.Car_ModelColumn]));
+                    if (this.IsCar_ModelNull()) {
+                        return null;
                     }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Car_Model\' in table \'InvoiceList\' is DBNull.", e);
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Car_ModelColumn]));
                     }
                 }
                 set {
                     this[this.tableInvoiceList.Car_ModelColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Car_Engine {
+                get {
+                    if (this.IsCar_EngineNull()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Car_EngineColumn]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Car_EngineColumn] = value;
                 }
             }
             
@@ -1355,6 +1996,646 @@ namespace Peterson {
                 }
                 set {
                     this[this.tableInvoiceList.Invoice_DateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Parts_Line_1 {
+                get {
+                    if (this.IsParts_Line_1Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Parts_Line_1Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Parts_Line_1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Parts_Price_1 {
+                get {
+                    if (this.IsParts_Price_1Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Parts_Price_1Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Parts_Price_1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Labor_Line_1 {
+                get {
+                    if (this.IsLabor_Line_1Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Labor_Line_1Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Labor_Line_1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Labor_Price_1 {
+                get {
+                    if (this.IsLabor_Price_1Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Labor_Price_1Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Labor_Price_1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Parts_Line_2 {
+                get {
+                    if (this.IsParts_Line_2Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Parts_Line_2Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Parts_Line_2Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Parts_Price_2 {
+                get {
+                    if (this.IsParts_Price_2Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Parts_Price_2Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Parts_Price_2Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Labor_Line_2 {
+                get {
+                    if (this.IsLabor_Line_2Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Labor_Line_2Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Labor_Line_2Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Labor_Price_2 {
+                get {
+                    if (this.IsLabor_Price_2Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Labor_Price_2Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Labor_Price_2Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Parts_Line_3 {
+                get {
+                    if (this.IsParts_Line_3Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Parts_Line_3Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Parts_Line_3Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Parts_Price_3 {
+                get {
+                    if (this.IsParts_Price_3Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Parts_Price_3Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Parts_Price_3Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Labor_Line_3 {
+                get {
+                    if (this.IsLabor_Line_3Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Labor_Line_3Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Labor_Line_3Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Labor_Price_3 {
+                get {
+                    if (this.IsLabor_Price_3Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Labor_Price_3Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Labor_Price_3Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Parts_Line_4 {
+                get {
+                    if (this.IsParts_Line_4Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Parts_Line_4Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Parts_Line_4Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Parts_Price_4 {
+                get {
+                    if (this.IsParts_Price_4Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Parts_Price_4Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Parts_Price_4Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Labor_Line_4 {
+                get {
+                    if (this.IsLabor_Line_4Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Labor_Line_4Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Labor_Line_4Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Labor_Price_4 {
+                get {
+                    if (this.IsLabor_Price_4Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Labor_Price_4Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Labor_Price_4Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Parts_Line_5 {
+                get {
+                    if (this.IsParts_Line_5Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Parts_Line_5Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Parts_Line_5Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Parts_Price_5 {
+                get {
+                    if (this.IsParts_Price_5Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Parts_Price_5Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Parts_Price_5Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Labor_Line_5 {
+                get {
+                    if (this.IsLabor_Line_5Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Labor_Line_5Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Labor_Line_5Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Labor_Price_5 {
+                get {
+                    if (this.IsLabor_Price_5Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Labor_Price_5Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Labor_Price_5Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Parts_Line_6 {
+                get {
+                    if (this.IsParts_Line_6Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Parts_Line_6Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Parts_Line_6Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Parts_Price_6 {
+                get {
+                    if (this.IsParts_Price_6Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Parts_Price_6Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Parts_Price_6Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Labor_Line_6 {
+                get {
+                    if (this.IsLabor_Line_6Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Labor_Line_6Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Labor_Line_6Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Labor_Price_6 {
+                get {
+                    if (this.IsLabor_Price_6Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Labor_Price_6Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Labor_Price_6Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Parts_Line_7 {
+                get {
+                    if (this.IsParts_Line_7Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Parts_Line_7Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Parts_Line_7Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Parts_Price_7 {
+                get {
+                    if (this.IsParts_Price_7Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Parts_Price_7Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Parts_Price_7Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Labor_Line_7 {
+                get {
+                    if (this.IsLabor_Line_7Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Labor_Line_7Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Labor_Line_7Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Labor_Price_7 {
+                get {
+                    if (this.IsLabor_Price_7Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Labor_Price_7Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Labor_Price_7Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Parts_Line_8 {
+                get {
+                    if (this.IsParts_Line_8Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Parts_Line_8Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Parts_Line_8Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Parts_Price_8 {
+                get {
+                    if (this.IsParts_Price_8Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Parts_Price_8Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Parts_Price_8Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Labor_Line_8 {
+                get {
+                    if (this.IsLabor_Line_8Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Labor_Line_8Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Labor_Line_8Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Labor_Price_8 {
+                get {
+                    if (this.IsLabor_Price_8Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Labor_Price_8Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Labor_Price_8Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Parts_Line_9 {
+                get {
+                    if (this.IsParts_Line_9Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Parts_Line_9Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Parts_Line_9Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Parts_Price_9 {
+                get {
+                    if (this.IsParts_Price_9Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Parts_Price_9Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Parts_Price_9Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Labor_Line_9 {
+                get {
+                    if (this.IsLabor_Line_9Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Labor_Line_9Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Labor_Line_9Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Labor_Price_9 {
+                get {
+                    if (this.IsLabor_Price_9Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Labor_Price_9Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Labor_Price_9Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Parts_Line_10 {
+                get {
+                    if (this.IsParts_Line_10Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Parts_Line_10Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Parts_Line_10Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Parts_Price_10 {
+                get {
+                    if (this.IsParts_Price_10Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Parts_Price_10Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Parts_Price_10Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Labor_Line_10 {
+                get {
+                    if (this.IsLabor_Line_10Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Labor_Line_10Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Labor_Line_10Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Labor_Price_10 {
+                get {
+                    if (this.IsLabor_Price_10Null()) {
+                        return null;
+                    }
+                    else {
+                        return ((string)(this[this.tableInvoiceList.Labor_Price_10Column]));
+                    }
+                }
+                set {
+                    this[this.tableInvoiceList.Labor_Price_10Column] = value;
                 }
             }
             
@@ -1403,6 +2684,498 @@ namespace Peterson {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetCar_ModelNull() {
                 this[this.tableInvoiceList.Car_ModelColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsCar_EngineNull() {
+                return this.IsNull(this.tableInvoiceList.Car_EngineColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetCar_EngineNull() {
+                this[this.tableInvoiceList.Car_EngineColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsParts_Line_1Null() {
+                return this.IsNull(this.tableInvoiceList.Parts_Line_1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetParts_Line_1Null() {
+                this[this.tableInvoiceList.Parts_Line_1Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsParts_Price_1Null() {
+                return this.IsNull(this.tableInvoiceList.Parts_Price_1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetParts_Price_1Null() {
+                this[this.tableInvoiceList.Parts_Price_1Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLabor_Line_1Null() {
+                return this.IsNull(this.tableInvoiceList.Labor_Line_1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLabor_Line_1Null() {
+                this[this.tableInvoiceList.Labor_Line_1Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLabor_Price_1Null() {
+                return this.IsNull(this.tableInvoiceList.Labor_Price_1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLabor_Price_1Null() {
+                this[this.tableInvoiceList.Labor_Price_1Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsParts_Line_2Null() {
+                return this.IsNull(this.tableInvoiceList.Parts_Line_2Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetParts_Line_2Null() {
+                this[this.tableInvoiceList.Parts_Line_2Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsParts_Price_2Null() {
+                return this.IsNull(this.tableInvoiceList.Parts_Price_2Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetParts_Price_2Null() {
+                this[this.tableInvoiceList.Parts_Price_2Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLabor_Line_2Null() {
+                return this.IsNull(this.tableInvoiceList.Labor_Line_2Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLabor_Line_2Null() {
+                this[this.tableInvoiceList.Labor_Line_2Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLabor_Price_2Null() {
+                return this.IsNull(this.tableInvoiceList.Labor_Price_2Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLabor_Price_2Null() {
+                this[this.tableInvoiceList.Labor_Price_2Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsParts_Line_3Null() {
+                return this.IsNull(this.tableInvoiceList.Parts_Line_3Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetParts_Line_3Null() {
+                this[this.tableInvoiceList.Parts_Line_3Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsParts_Price_3Null() {
+                return this.IsNull(this.tableInvoiceList.Parts_Price_3Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetParts_Price_3Null() {
+                this[this.tableInvoiceList.Parts_Price_3Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLabor_Line_3Null() {
+                return this.IsNull(this.tableInvoiceList.Labor_Line_3Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLabor_Line_3Null() {
+                this[this.tableInvoiceList.Labor_Line_3Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLabor_Price_3Null() {
+                return this.IsNull(this.tableInvoiceList.Labor_Price_3Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLabor_Price_3Null() {
+                this[this.tableInvoiceList.Labor_Price_3Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsParts_Line_4Null() {
+                return this.IsNull(this.tableInvoiceList.Parts_Line_4Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetParts_Line_4Null() {
+                this[this.tableInvoiceList.Parts_Line_4Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsParts_Price_4Null() {
+                return this.IsNull(this.tableInvoiceList.Parts_Price_4Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetParts_Price_4Null() {
+                this[this.tableInvoiceList.Parts_Price_4Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLabor_Line_4Null() {
+                return this.IsNull(this.tableInvoiceList.Labor_Line_4Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLabor_Line_4Null() {
+                this[this.tableInvoiceList.Labor_Line_4Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLabor_Price_4Null() {
+                return this.IsNull(this.tableInvoiceList.Labor_Price_4Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLabor_Price_4Null() {
+                this[this.tableInvoiceList.Labor_Price_4Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsParts_Line_5Null() {
+                return this.IsNull(this.tableInvoiceList.Parts_Line_5Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetParts_Line_5Null() {
+                this[this.tableInvoiceList.Parts_Line_5Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsParts_Price_5Null() {
+                return this.IsNull(this.tableInvoiceList.Parts_Price_5Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetParts_Price_5Null() {
+                this[this.tableInvoiceList.Parts_Price_5Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLabor_Line_5Null() {
+                return this.IsNull(this.tableInvoiceList.Labor_Line_5Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLabor_Line_5Null() {
+                this[this.tableInvoiceList.Labor_Line_5Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLabor_Price_5Null() {
+                return this.IsNull(this.tableInvoiceList.Labor_Price_5Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLabor_Price_5Null() {
+                this[this.tableInvoiceList.Labor_Price_5Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsParts_Line_6Null() {
+                return this.IsNull(this.tableInvoiceList.Parts_Line_6Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetParts_Line_6Null() {
+                this[this.tableInvoiceList.Parts_Line_6Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsParts_Price_6Null() {
+                return this.IsNull(this.tableInvoiceList.Parts_Price_6Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetParts_Price_6Null() {
+                this[this.tableInvoiceList.Parts_Price_6Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLabor_Line_6Null() {
+                return this.IsNull(this.tableInvoiceList.Labor_Line_6Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLabor_Line_6Null() {
+                this[this.tableInvoiceList.Labor_Line_6Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLabor_Price_6Null() {
+                return this.IsNull(this.tableInvoiceList.Labor_Price_6Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLabor_Price_6Null() {
+                this[this.tableInvoiceList.Labor_Price_6Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsParts_Line_7Null() {
+                return this.IsNull(this.tableInvoiceList.Parts_Line_7Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetParts_Line_7Null() {
+                this[this.tableInvoiceList.Parts_Line_7Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsParts_Price_7Null() {
+                return this.IsNull(this.tableInvoiceList.Parts_Price_7Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetParts_Price_7Null() {
+                this[this.tableInvoiceList.Parts_Price_7Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLabor_Line_7Null() {
+                return this.IsNull(this.tableInvoiceList.Labor_Line_7Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLabor_Line_7Null() {
+                this[this.tableInvoiceList.Labor_Line_7Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLabor_Price_7Null() {
+                return this.IsNull(this.tableInvoiceList.Labor_Price_7Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLabor_Price_7Null() {
+                this[this.tableInvoiceList.Labor_Price_7Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsParts_Line_8Null() {
+                return this.IsNull(this.tableInvoiceList.Parts_Line_8Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetParts_Line_8Null() {
+                this[this.tableInvoiceList.Parts_Line_8Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsParts_Price_8Null() {
+                return this.IsNull(this.tableInvoiceList.Parts_Price_8Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetParts_Price_8Null() {
+                this[this.tableInvoiceList.Parts_Price_8Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLabor_Line_8Null() {
+                return this.IsNull(this.tableInvoiceList.Labor_Line_8Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLabor_Line_8Null() {
+                this[this.tableInvoiceList.Labor_Line_8Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLabor_Price_8Null() {
+                return this.IsNull(this.tableInvoiceList.Labor_Price_8Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLabor_Price_8Null() {
+                this[this.tableInvoiceList.Labor_Price_8Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsParts_Line_9Null() {
+                return this.IsNull(this.tableInvoiceList.Parts_Line_9Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetParts_Line_9Null() {
+                this[this.tableInvoiceList.Parts_Line_9Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsParts_Price_9Null() {
+                return this.IsNull(this.tableInvoiceList.Parts_Price_9Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetParts_Price_9Null() {
+                this[this.tableInvoiceList.Parts_Price_9Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLabor_Line_9Null() {
+                return this.IsNull(this.tableInvoiceList.Labor_Line_9Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLabor_Line_9Null() {
+                this[this.tableInvoiceList.Labor_Line_9Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLabor_Price_9Null() {
+                return this.IsNull(this.tableInvoiceList.Labor_Price_9Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLabor_Price_9Null() {
+                this[this.tableInvoiceList.Labor_Price_9Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsParts_Line_10Null() {
+                return this.IsNull(this.tableInvoiceList.Parts_Line_10Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetParts_Line_10Null() {
+                this[this.tableInvoiceList.Parts_Line_10Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsParts_Price_10Null() {
+                return this.IsNull(this.tableInvoiceList.Parts_Price_10Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetParts_Price_10Null() {
+                this[this.tableInvoiceList.Parts_Price_10Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLabor_Line_10Null() {
+                return this.IsNull(this.tableInvoiceList.Labor_Line_10Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLabor_Line_10Null() {
+                this[this.tableInvoiceList.Labor_Line_10Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLabor_Price_10Null() {
+                return this.IsNull(this.tableInvoiceList.Labor_Price_10Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLabor_Price_10Null() {
+                this[this.tableInvoiceList.Labor_Price_10Column] = global::System.Convert.DBNull;
             }
         }
         
@@ -2196,7 +3969,7 @@ SELECT Phone_Number, Invoice_Number, Car_Year, Car_Make, Car_Model, VIN, Invoice
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT Phone_Number, Invoice_Number, Car_Year, Car_Make, Car_Model, VIN, Invoice_" +
-                "Date FROM dbo.InvoiceList";
+                "Date FROM InvoiceList";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
